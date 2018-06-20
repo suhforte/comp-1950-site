@@ -1,0 +1,29 @@
+article {
+    @include article-padding;
+    font-family: $body-font;
+
+
+}
+
+section h1{
+    text-align: center;
+    padding-top: 10px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+section .row {
+  max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    @media (max-width: $phone-wide){
+      flex-direction: column;
+    }
+
+}

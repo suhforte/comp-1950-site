@@ -1,0 +1,7 @@
+body {
+   @include flatten;
+    margin: 0;
+    font-family: $body-font;
+    max-width: 100%;
+    background-color: $body-bg-color;
+}

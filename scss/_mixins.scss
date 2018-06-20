@@ -1,0 +1,18 @@
+//mixins
+
+@mixin flatten {
+    padding: 0;
+    margin: 0;
+}
+
+
+@mixin links ($light-color: WHITE){
+    color: white;
+    text-decoration: none;
+    font-style: $body-font;
+}
+
+
+@mixin article-padding{
+    padding: 0px 30px;
+}

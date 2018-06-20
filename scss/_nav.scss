@@ -1,0 +1,68 @@
+// Main Navigation styles
+nav {
+
+  ul {
+    @include flatten;
+    font-family: $body-font;
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 300;
+  }
+
+  a {
+    font-family: $body-font;
+    @include links;
+    display: block;
+    margin-top: 15px;
+    padding: 20px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #ccc;
+    }
+
+  }
+
+  @media (max-width: $phone-wide){
+    display: none;
+    height: 0;
+    width: 100%;
+    ul {
+      flex-direction: column;
+    }
+    li {
+      width: 100%;
+    }
+    a {
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .show & {
+      height: 330px;
+      display: block;
+    }
+
+  } // end phone-wide MQ
+
+} // end Nav
+
+// Mobile Navigation button
+.menu{
+    display: none;
+
+    @media (max-width: $phone-wide){
+      display: block;
+      background-color: transparent;
+      border: none;
+      padding-top: 10px;
+      color:$text-color-light;
+      height: 15px;
+      font-size: 15px;
+      margin-top: 10px;
+    }
+
+
+}

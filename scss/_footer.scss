@@ -1,0 +1,27 @@
+footer {
+    background-color: $text-color-dark;
+    color: $text-color-light;
+    height: 15%;
+    padding: 10px;
+
+    a {
+      color: $text-color-light-a;
+      text-decoration: none;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      max-width: 90%;
+      padding: 10px 40px;
+
+    }
+
+    @media (max-width: $phone-wide){
+      height: auto;
+      .row {
+        flex-direction: column;
+      }
+    }
+
+}
